@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "image": "/public/review.png",
+      "info": {
+        "icon": "”",
+        "header": "Light o' lantern",
+        "subheader": "Very good staff, qualified and effective! Easy to use & the application have lot of differents languages",
+        "footer": {
+          "header": "Reviews"
+        }
+      }
+    },
+    {
+      "image": "/public/cupMan.png",
+      "info": {
+        "icon": "”",
+        "header": "Natural Organic",
+        "subheader": "They keep improving. Whenever needed I received professional support.",
+        "footer": {
+          "header": "Reviews"
+        }
+      }
+    },
+    {
+      "image": "/public/smileMan.png",
+      "info": {
+        "icon": "”",
+        "header": "FORMA",
+        "subheader": "Easy to integrate, clear navigation to keep you up to date with what you still need to apps",
+        "footer": {
+          "header": "Reviews"
+        }
+      }
+    },
+    {
+      "image": "/public/girlNoteBook.png",
+      "info": {
+        "icon": "”",
+        "header": "hinese mood",
+        "subheader": "Finally, an app that really delivers. I like the overview in the dashboard. Realy easy to see what needs to be fixed. ",
+        "footer": {
+          "header": "Reviews"
+        }
+      }
+    }
+  ]
+}

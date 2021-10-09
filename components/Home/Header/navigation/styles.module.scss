@@ -1,0 +1,194 @@
+.navigation {
+  &Item {
+    padding: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  &List {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &Link {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.3s color;
+
+    &:hover {
+      color: #FFC20A;
+    }
+  }
+}
+
+.moveToLink {
+  background: #232946;
+  border: 2px solid #FFC20A;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 23px 10px 30px;
+}
+
+//=== DropDown ===
+
+.dropDownActivator {
+  position: relative;
+  z-index: 999;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 10px;
+    border-bottom: 1px dashed #E3AF11;
+  }
+
+  &:after {
+    content: "";
+    width: 20px;
+    height: 27px;
+    position: absolute;
+    top: calc(50% - 13px);
+    right: 0;
+    background-image: url("../../../../public/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    transition: 0.2s all ease-in;
+    cursor: pointer;
+  }
+}
+
+.dropDown {
+  z-index: 433;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  display: block;
+  width: 256px;
+  height: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: 0.3s all ease-in;
+  padding-top: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  overflow: hidden;
+
+  &Link {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    color: #202223;
+    visibility: hidden;
+    transition: all 0.3s ease-in;
+  }
+
+  &Item {
+    box-sizing: border-box;
+    visibility: hidden;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 48px;
+    transition: all 0.3s ease-in;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 100%;
+      top: 0;
+      left: -8px;
+      background-color: transparent;
+      border-radius: 0 4px 4px 0;
+      transition: 0.3s background-color ease-in;
+    }
+
+    &:hover {
+      background-color: #EDEEEF;
+    }
+
+    &:hover:before {
+      background-color: #FFC20A;
+    }
+  }
+
+  &Item:hover &Link {
+    color: #DEA90B;
+  }
+}
+
+.dropDownActivator:hover .dropDown{
+  visibility: visible;
+  height: 186px;
+}
+
+.dropDownActivator:hover .dropDownLink {
+  visibility: visible;
+}
+
+.dropDownActivator:hover .dropDownItem {
+  visibility: visible;
+}
+
+.dropDownActivator:hover:after {
+  transform: rotate(0);
+}
+
+.burger {
+  display: none;
+  &Wrapper {
+    width: 35px;
+    height: 30px;
+    position: relative;
+    margin-top: 10px;
+  }
+  &Row {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #FFC20A;
+    position: absolute;
+    border-radius: 25px;
+  }
+
+  &Row2 {
+    top: 0;
+  }
+
+  &Row1 {
+    top: calc(50% - 1px);
+  }
+  &Row3 {
+    bottom: 0;
+  }
+}
+
+
+@media screen and (max-width: 920px) {
+  .mbDispNone {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}

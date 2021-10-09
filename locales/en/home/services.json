@@ -1,0 +1,43 @@
+{
+  "help": {
+    "header" : "We help clients take their online business to the next level",
+    "footer": {
+      "right": {
+        "header": "Great applications with striking features",
+        "subheader": "Solving customers' everyday challenges and help them grow their business"
+      },
+      "left": {
+        "header": "",
+        "subheader": ""
+      }
+    }
+  },
+  "solutions": {
+    "header" : "300+",
+    "subheader": "5 star reviews on Shopify",
+    "footer": {
+      "left": {
+        "header": "Solutions for different e-business tasks",
+        "subheader": "Our apps help solving multiple tasks for improving Shopify online stores"
+      },
+      "right": {
+        "header": "",
+        "subheader": ""
+      }
+    }
+  },
+  "features": {
+    "header": "5000+",
+    "subheader": "Active merchants",
+    "footer": {
+      "right": {
+        "header": "Boost sales with minimum efforts",
+        "subheader":"User-friendly design, simple navigation, automated processes, and affordable prices"
+      },
+      "left": {
+        "header": "190+",
+        "subheader": "Counties"
+      }
+    }
+  }
+}

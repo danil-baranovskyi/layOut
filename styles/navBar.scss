@@ -1,0 +1,128 @@
+.navBar {
+  z-index: 1000;
+  position: fixed;
+  max-width: 428px;
+  width: 100%;
+  height: 100%;
+  background-color: #191C34;
+  top: 0;
+  right: 0;
+  padding: 25px 45px 45px 45px;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(500px);
+
+  &Header {
+    padding-bottom: 15px;
+    border-bottom: 4px solid #FFC20A;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &Close {
+    display: inline-block;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    transition-property: all;
+    transition: 0.4s all;
+    transition-delay: 0.4s;
+    position: relative;
+
+    &Row1, &Row2{
+      display: inline-block;
+      position: absolute;
+      width: 42px;
+      height: 4px;
+      background-color: #FFC20A;
+      top: calc(50% - 2px);
+      left: -5px;
+      transition: 0.5s all;
+      transition-delay: 0.9s;
+      border-radius: 25px;
+    }
+  }
+
+  &Content {
+    margin-top: 40px;
+    margin-bottom: 46px;
+    &List {
+      padding: 22px 0 22px 56px;
+    }
+
+    &Item {
+      margin-bottom: 15px;
+    }
+
+    &Link {
+      color: #FFFFFF;
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      line-height: 1.8;
+    }
+  }
+}
+
+.viewAllWrapper {
+  margin-top: 30px;
+  padding-bottom: 32px;
+  border-bottom: 4px solid #FFC20A;
+
+  .viewAllLink {
+    font-family: Roboto, sans-serif;
+    overflow: hidden;
+    display: block;
+    max-height: 46px;
+    background: #FFC20A;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    text-align: center;
+    padding: 12px 0;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #191C34;
+  }
+}
+
+
+.navBarActive {
+  transform: translateX(0px);
+
+  .navBarClose {
+    transform: rotate(360deg);
+    &Row1 {
+      transform: rotate(45deg);
+    }
+    &Row2 {
+      transform: rotate(-45deg);
+    }
+  }
+
+
+}
+
+.overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  transform: translateX(-100%);
+  transition: 0.3s all ease-in-out;
+}
+
+.overlayActive {
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 340px) {
+  .navBar {
+    padding: 25px 35px 35px 35px;
+  }
+}

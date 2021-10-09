@@ -1,0 +1,23 @@
+.generalLinkWrapper {
+  display: flex;
+  align-items: center;
+
+  .generalLink {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-right: 30px;
+    transition: 0.2s color ease-in;
+
+    &:hover {
+      color: #FFC20A;
+    }
+  }
+}
+
+@media screen and (max-width: 540px){
+}

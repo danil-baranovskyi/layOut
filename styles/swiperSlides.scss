@@ -1,0 +1,134 @@
+$arrow-active-col: #FFC20A;
+$arrow-disabled-col: #C4C4C4;
+
+.mainSlider {
+  .swiper-wrapper {
+    padding-inline-start: 0;
+    max-width: 1350px;
+    padding: 0 15px;
+    max-height: 485px;
+  }
+
+  .buttons-wrapper {
+    margin-left: 15px;
+  }
+
+  .button-next, .button-prev{
+    width: 50px;
+    height: 18px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .button-next {
+    position: relative;
+  }
+
+  .button-prev {
+    position: relative;
+    margin-right: 25px;
+  }
+
+  .button-next:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 15px;
+    border-color: transparent transparent transparent  $arrow-active-col;
+  }
+  .button-next:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 4px;
+    background-color: $arrow-active-col;
+  }
+
+  .button-prev:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top-width: 9px;
+    border-right-width: 15px;
+    border-bottom-width: 9px;
+    border-left-width: 0;
+    border-color: transparent $arrow-active-col transparent transparent;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+
+  .button-prev:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 4px;
+    background-color: $arrow-active-col;
+  }
+
+  .swiper-slide {
+    max-width: 1715px;
+    box-sizing: border-box;
+  }
+
+  .button-next.swiper-button-disabled {
+    opacity: 1;
+  }
+
+  .button-prev.swiper-button-disabled {
+    opacity: 1;
+  }
+
+  .button-next.swiper-button-disabled:after {
+    border-color: transparent transparent transparent  $arrow-disabled-col;
+  }
+  .button-next.swiper-button-disabled:before {
+    background-color: $arrow-disabled-col;
+  }
+
+  .button-prev.swiper-button-disabled:after {
+    border-color: transparent $arrow-disabled-col transparent transparent;
+  }
+  .button-prev.swiper-button-disabled:before {
+    background-color: #C4C4C4;
+  }
+}
+
+@media screen and (max-width: 960px){
+  .mainSlider {
+    .buttons-wrapper {
+      position: absolute;
+      bottom: 0;
+      left: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .mainSlider {
+    .buttons-wrapper {
+      position: static;
+    }
+  }
+}
+
+@media screen and (max-width: 490px){
+  .mainSlider {
+    .buttons-wrapper {
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 113px)
+    }
+  }
+}

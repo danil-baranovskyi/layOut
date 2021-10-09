@@ -1,0 +1,11 @@
+{
+  "preview": {
+    "header": "Privacy Policy",
+    "updated": "Last updated on:",
+    "text-content" : {
+      "p1" : "Aheadworks Inc. (“Aheadworks”) has a strong belief in the extreme importance of the user's privacy. That is why we have compiled this Privacy Policy (“Policy”) so that you do not worry about what happens to your Personal Data (“Personal Data”, “Personal Information”).",
+      "p2": "Privacy Policy covers the relationship to Personal Data and other information that we receive from users through our Application (“Applications”) - LangShop – Language & Currency Translate (“LangShop”). By installing our Application, you grant Aheadworks the consent to process all entered data for the purpose of properly providing registration services.",
+      "p3": "Using LangShop and the provision of Personal Information to us means the acceptance by the user of the terms of the Policy and consent to the processing of the provided information in accordance with this Policy."
+    }
+  }
+}

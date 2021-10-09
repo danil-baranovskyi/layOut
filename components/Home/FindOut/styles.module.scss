@@ -1,0 +1,87 @@
+.findOut {
+  &Container {
+    max-width: 1220px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 145px;
+  }
+  position: relative;
+  overflow: hidden;
+
+  &Info {
+    max-width: 730px;
+    margin-bottom: 20px;
+  }
+
+  &Header {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.6rem;
+    line-height: 3rem;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-bottom: 33px;
+  }
+
+  &SubHeader {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 128.19%;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+  }
+
+  &LinkWrapper{
+    min-width: 412px;
+    height: 412px;
+    background: rgba(41, 39, 76, 0.6);
+    box-shadow: 11px 12px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &Fon {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .findOut {
+    &Container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &LinkWrapper {
+      background: transparent;
+      box-shadow: none;
+      min-width: auto;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .findOut {
+    &Header {
+      font-size: 1.9rem;
+      line-height: 2.3rem;
+    }
+
+    &SubHeader {
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.privacyPreview {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 80px 35px 140px 60px;
+  background: linear-gradient(180deg, rgba(44, 53, 86, 0.8) 0%, rgba(36, 34, 69, 0.8) 100%);
+  border-radius: 15px;
+  margin-bottom: 100px;
+
+  &Header {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 115px;
+  }
+
+  &Updated {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.25rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: #FFC20A;
+    margin-bottom: 80px;
+
+    &Info {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 2.3rem;
+      letter-spacing: 0.1em;
+      text-transform: capitalize;
+      color: #FFFFFF;
+    }
+  }
+
+  &Text {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+}

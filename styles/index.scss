@@ -1,0 +1,46 @@
+@import "reset.scss";
+@import "swiperSlides";
+@import "navBar";
+
+body {
+  background: linear-gradient(180deg, #222945 0%, #271A45 100%) no-repeat;
+}
+
+html {
+  font-size: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*@font-face {
+  font-family: "ABeeZee";
+  src: url("../fonts/AbeeZee-Regular.ttf") format("ttf");
+}*/
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+}

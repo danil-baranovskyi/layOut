@@ -1,0 +1,188 @@
+.slide {
+
+
+  &Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &Header {
+    font-size: 4.3rem;
+    color: #cccccc;
+  }
+
+  &Icon {
+    font-family: ABeeZee, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 7.5rem;
+    color: #FFFFFF;
+    max-height: 42px;
+  }
+
+  &Info {
+    max-width: 536px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+    padding-right: 10px;
+
+    &Header {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.75rem;
+      line-height: 128.19%;
+      letter-spacing: 0.1em;
+      color: #FFFFFF;
+    }
+
+    &SubHeader {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 171.69%;
+      letter-spacing: 0.1em;
+      color: #E5E5E5;
+    }
+  }
+
+  &Reviews {
+    &Wrapper {
+      display: flex;
+      align-items: center;
+    }
+    &Container {
+      display: flex;
+      align-items: center;
+    }
+    &Header {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      line-height: 128.19%;
+      letter-spacing: 0.1em;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      margin-right: 43px;
+    }
+
+    &StarsWrapper {
+      display: flex;
+    }
+
+    &Star {
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.humans {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px){
+  .slide {
+    &Container {
+      padding-bottom: 40px;
+    }
+
+    &Reviews {
+      &Wrapper {
+        flex-direction: column;
+        align-items: start;
+      }
+
+    }
+  }
+
+  .buttons-wrapper {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 860px){
+  .slide {
+    &Info {
+      &Header {
+        font-size: 1.5rem;
+        line-height: 1.3rem;
+      }
+      &SubHeader {
+        font-size: 1rem;
+        line-height: 1.8rem;
+      }
+    }
+
+    &Reviews {
+      &Header {
+        font-size: 1.2rem;
+      }
+
+      &Star {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .slide {
+
+    &Info {
+      padding-right: 20px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .humans {
+    display: none;
+  }
+
+  .slide {
+    &Container {
+      padding-bottom: 40px;
+    }
+    &Reviews {
+      &Wrapper {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    &Info {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .slide {
+    &Reviews {
+      &Wrapper {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .slide {
+    &Info {
+      padding-right: 30px;
+    }
+  }
+}

@@ -1,0 +1,241 @@
+@import "vars";
+
+.service {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 0 auto;
+
+  &Reversed {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  &Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 720px;
+    width: 100%;
+  }
+
+  &InfoWrapper{
+    max-width: 720px;
+    padding: 20px 15px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &InfoHeader {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.6rem;
+    line-height: 3rem;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    max-width: 525px;
+  }
+
+  &InfoHeader_v2 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $serviceInfoHeaderFontSize;
+    line-height: $serviceInfoHeaderLineHeight;
+    color: $serviceInfoHeaderColor;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+
+  &InfoSubHeader_v2{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $serviceInfoSubHeaderFontSize;
+    line-height: $serviceInfoSubHeaderLineHeight;
+    color: $serviceInfoSubHeaderColor;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    max-width: 320px;
+  }
+
+  &Footer {
+    width: 100%;
+    display: flex;
+
+    &IconHeader {
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: $serviceFooterIconHeaderFontSize;
+      line-height: $serviceFooterIconHeaderLineHeight;
+      color: $serviceFooterIconHeaderColor;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+
+    &IconSubHeader {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: $serviceFooterIconSubHeaderFontSize;
+      line-height: $serviceFooterIconSubHeaderLineHeight;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: lowercase;
+      color: $serviceFooterIconSubHeaderColor;
+    }
+
+    &IconWrapper {
+      background-color: rgba(45, 49, 84, 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding: 25px 25px;
+    }
+
+    &Info {
+      background-color: rgba(45, 49, 84, 0.3);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 25px 25px;
+
+      &Header {
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: $serviceFooterInfoHeaderFontSize;
+        line-height: $serviceFooterInfoHeaderLineHeight;
+        max-width: 340px;
+        color: $serviceFooterInfoHeaderColor;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        letter-spacing: 0.1em;
+      }
+
+      &SubHeader {
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: $serviceFooterInfoSubHeaderFontSize;
+        line-height: $serviceFooterInfoSubHeaderLineHeight;
+        color: $serviceFooterInfoSubHeaderColor;
+        letter-spacing: 0.1em;
+        max-width: 375px;
+      }
+    }
+  }
+
+  &ItemWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(45, 49, 84, 0.4);
+    max-width: 720px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1060px){
+  .service {
+    display: flex;
+    flex-direction: column-reverse;
+
+    &Info {
+      max-width: 100%;
+
+      .tabletNone {
+        display: none;
+        padding: 0;
+      }
+
+      &Header {
+        display: none;
+      }
+    }
+
+    &ItemWrapper {
+      max-width: 100%;
+      max-height: 496px;
+    }
+
+    &Footer {
+      &Info {
+        align-items: center;
+        text-align: center;
+      }
+
+      &IconWrapper {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .service {
+    &Footer {
+      &Info {
+        &Header {
+          font-size: 1.2rem;
+          line-height: 1.4rem;
+        }
+
+        &SubHeader {
+          font-size: 0.9rem;
+          line-height: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .service {
+    &Info {
+      &Header_v2 {
+        font-size: 3rem;
+        line-height: 4.5rem;
+      }
+      &SubHeader_v2 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    &Footer {
+      &Icon{
+        &Header {
+          font-size: 3rem;
+          line-height: 4.5rem;
+        }
+        &SubHeader {
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .service {
+    &Footer {
+      flex-direction: column-reverse;
+
+    }
+  }
+}
+
